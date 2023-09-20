@@ -1,0 +1,18 @@
+{% extends 'console/base.html' %}
+
+{% block title %}Console Login{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <h2>Console Login</h2>
+    <form method="post" class="login-form">
+        {% csrf_token %}
+        {{ form.username.label_tag }}
+        {{ form.username }}
+        {{ form.password.label_tag }}
+        {{ form.password }}
+        <button type="submit">Login</button>
+    </form>
+    <p class="register-link">Don't have an account? <a href="{% url 'console_register' %}">Register here</a></p>
+</div>
+{% endblock %}
