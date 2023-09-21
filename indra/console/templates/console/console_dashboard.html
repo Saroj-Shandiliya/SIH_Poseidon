@@ -1,0 +1,226 @@
+{% extends "indra/base.html" %}
+{% load static %}
+{% block title %}Console Dashboard - INDRA{% endblock %}
+{% block content %}
+    <div class="desktop">
+      <div class="div">
+        <img class="line" src="img/line-1.svg" />
+        <img class="vector" src="img/vector-16.svg" />
+        <img class="img" src="img/vector-36.svg" />
+        <img class="vector-2" src="img/vector-28.svg" />
+        <img class="line-2" src="img/line-2.png" />
+        <img class="settings" src="img/settings.svg" />
+
+        <div class="overlap">
+          <p class="apparent-loss-real">
+            <span class="text-wrapper">Apparent Loss<br />Real Loss<br />Unauthorized billed consumption<br /></span>
+            <span class="span"><br /><br /></span>
+            <span class="text-wrapper-2">Non Revenue Water</span>
+            <span class="text-wrapper-3">&nbsp;</span>
+          </p>
+          {% comment %} <img class="group" src="img/group-4.png" /> {% endcomment %}
+          <img class ="group" src="data:image/png;base64,{{ plot_data_uri }}" alt="Real Losses Plot">
+        </div>
+        <div class="overlap-group">
+          <div class="overlap-2">
+            <p class="normal-flow-real">Normal Flow<br />Real Time Flow<br />Expected flow</p>
+            <div class="chart">
+              <div class="overlap-3">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-2">
+                    <img class="vector-3" src="img/vector-25.svg" />
+                    <div class="group-2">
+                      <div class="group-3">
+                        <img class="vector-4" src="img/vector-29.svg" />
+                        <div class="text-wrapper-4">0</div>
+                      </div>
+                      <div class="group-4">
+                        <img class="vector-4" src="img/vector-14.svg" />
+                        <div class="text-wrapper-5">1</div>
+                      </div>
+                      <div class="group-5">
+                        <img class="vector-4" src="img/vector-15.svg" />
+                        <div class="text-wrapper-4">2</div>
+                      </div>
+                      <div class="group-6">
+                        <img class="vector-4" src="img/vector-30.svg" />
+                        <div class="text-wrapper-4">3</div>
+                      </div>
+                      <div class="group-7">
+                        <img class="vector-4" src="img/vector-12.svg" />
+                        <div class="text-wrapper-4">4</div>
+                      </div>
+                      <div class="group-8">
+                        <img class="vector-4" src="img/vector-2.svg" />
+                        <div class="text-wrapper-4">5</div>
+                      </div>
+                      <div class="group-9">
+                        <img class="vector-4" src="img/vector-32.svg" />
+                        <div class="text-wrapper-4">6</div>
+                      </div>
+                      <div class="group-10">
+                        <img class="vector-4" src="img/vector-34.svg" />
+                        <div class="text-wrapper-5">7</div>
+                      </div>
+                      <div class="group-11">
+                        <img class="vector-4" src="img/vector-20.svg" />
+                        <div class="text-wrapper-4">8</div>
+                      </div>
+                      <div class="group-12">
+                        <img class="vector-4" src="img/vector-9.svg" />
+                        <div class="text-wrapper-4">9</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group-13">
+                  <div class="overlap-4">
+                    <img class="vector-5" src="img/vector-11.svg" />
+                    <div class="group-13">
+                      <div class="group-14">
+                        <img class="vector-6" src="img/vector-10.svg" />
+                        <div class="text-wrapper-6">0</div>
+                      </div>
+                      <div class="group-15">
+                        <img class="vector-6" src="img/vector-26.svg" />
+                        <div class="text-wrapper-6">3</div>
+                      </div>
+                      <div class="group-16">
+                        <img class="vector-6" src="img/vector.svg" />
+                        <div class="text-wrapper-6">6</div>
+                      </div>
+                      <div class="group-17">
+                        <img class="vector-6" src="img/vector-7.svg" />
+                        <div class="text-wrapper-6">9</div>
+                      </div>
+                      <div class="group-18">
+                        <img class="vector-7" src="img/vector-37.svg" />
+                        <div class="text-wrapper-7">12</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="group-19" src="img/group-5.png" />
+                <img class="group-20" src="img/group-6.png" />
+                <img class="group-21" src="img/group-3.png" />
+              </div>
+            </div>
+          </div>
+          <div class="text-wrapper-8">Flow Analysis</div>
+          <div class="text-wrapper-9">Incoming</div>
+          <div class="overlap-5">
+            <p class="p">Normal Flow<br />Real Time Flow<br />Expected flow</p>
+            <div class="overlap-wrapper">
+              <div class="overlap-3">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-3">
+                    <img class="vector-3" src="img/vector-21.svg" />
+                    <div class="group-22">
+                      <div class="group-3">
+                        <img class="vector-4" src="img/vector-23.svg" />
+                        <div class="text-wrapper-4">0</div>
+                      </div>
+                      <div class="group-4">
+                        <img class="vector-4" src="img/vector-19.svg" />
+                        <div class="text-wrapper-5">1</div>
+                      </div>
+                      <div class="group-5">
+                        <img class="vector-4" src="img/vector-3.svg" />
+                        <div class="text-wrapper-4">2</div>
+                      </div>
+                      <div class="group-6">
+                        <img class="vector-4" src="img/image.svg" />
+                        <div class="text-wrapper-4">3</div>
+                      </div>
+                      <div class="group-7">
+                        <img class="vector-4" src="img/vector-13.svg" />
+                        <div class="text-wrapper-4">4</div>
+                      </div>
+                      <div class="group-8">
+                        <img class="vector-4" src="img/vector-4.svg" />
+                        <div class="text-wrapper-4">5</div>
+                      </div>
+                      <div class="group-9">
+                        <img class="vector-4" src="img/vector-17.svg" />
+                        <div class="text-wrapper-4">6</div>
+                      </div>
+                      <div class="group-10">
+                        <img class="vector-4" src="img/vector-31.svg" />
+                        <div class="text-wrapper-5">7</div>
+                      </div>
+                      <div class="group-11">
+                        <img class="vector-4" src="img/vector-6.svg" />
+                        <div class="text-wrapper-4">8</div>
+                      </div>
+                      <div class="group-12">
+                        <img class="vector-4" src="img/vector-18.svg" />
+                        <div class="text-wrapper-4">9</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group-13">
+                  <div class="overlap-4">
+                    <img class="vector-5" src="img/vector-27.svg" />
+                    <div class="group-13">
+                      <div class="group-14">
+                        <img class="vector-6" src="img/vector-22.svg" />
+                        <div class="text-wrapper-6">0</div>
+                      </div>
+                      <div class="group-15">
+                        <img class="vector-6" src="img/vector-33.svg" />
+                        <div class="text-wrapper-6">3</div>
+                      </div>
+                      <div class="group-16">
+                        <img class="vector-6" src="img/vector-35.svg" />
+                        <div class="text-wrapper-6">6</div>
+                      </div>
+                      <div class="group-17">
+                        <img class="vector-6" src="img/vector-24.svg" />
+                        <div class="text-wrapper-6">9</div>
+                      </div>
+                      <div class="group-18">
+                        <img class="vector-7" src="img/vector-8.svg" />
+                        <div class="text-wrapper-7">12</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="group-19" src="img/group-2.png" />
+                <img class="group-20" src="img/group.png" />
+                <img class="group-21" src="img/image.png" />
+              </div>
+            </div>
+          </div>
+          <img class="line-3" src="img/line-3.svg" />
+          <img class="line-4" src="img/line-4.svg" />
+          <div class="text-wrapper-10">Outgoing</div>
+          <img class="line-5" src="img/line-5.svg" />
+          <img class="line-6" src="img/line-6.svg" />
+        </div>
+        <div class="overlap-6">
+          <div class="real-volume-expected">Real Volume<br />Expected Volume</div>
+          <div class="text-wrapper-11">Volume Analysis</div>
+          <div class="text-wrapper-12">Incoming</div>
+          <div class="text-wrapper-13">Outgoing</div>
+          <div class="real-time-volume">Real Time Volume<br />Expected Volume</div>
+          <img class="line-7" src="img/line-7.svg" />
+          <img class="line-8" src="img/line-8.svg" />
+          <img class="line-9" src="img/line-9.svg" />
+          <img class="line-10" src="img/line-10.svg" />
+        </div>
+        <div class="overlap-7">
+          <div class="AI-suggestions">AI&nbsp;&nbsp;Suggestions &amp; Predections</div>
+          <img class="line-11" src="img/line-11.svg" />
+        </div>
+        <div class="div-wrapper"><div class="text-wrapper-14">Incidents</div></div>
+        <div class="text-wrapper-15">Dashboard</div>
+        <input name="" id="" class="rectangle" type="search" style="font-size:40px; cursor:pointer; " />
+        {% comment %} <div class="rectangle"></div> {% endcomment %}
+        <div class="overlap-8"><div class="text-wrapper-16">Report Generation</div></div>
+        <i class="fa fa-search vector-8" aria-hidden="true" style="font-size:40px; cursor:pointer; " ></i>
+
+      </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/console_dashboard.css' %}">
+{% endblock %}

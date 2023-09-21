@@ -1,0 +1,42 @@
+<!-- console/templates/console/sorted_classified_data.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorted Classified Data</title>
+</head>
+<body>
+    <h1>Sorted Classified Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Month</th>
+                <th>Total Real Losses</th>
+                <th>Total Flow Analysis Central</th>
+                <th>Total Flow Analysis Receive</th>
+                <th>System Input Volume</th>
+                <th>Build Consumer</th>
+                <th>Non-Revenue Water</th>
+                <th>AL</th>
+                <th>Unauthorized</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in classified_data %}
+                <tr>
+                    <td>{{ data.year }}</td>
+                    <td>{{ data.month }}</td>
+                    <td>{{ data.total_real_losses }}</td>
+                    <td>{{ data.total_flow_analysis_central }}</td>
+                    <td>{{ data.total_flow_analysis_receive }}</td>
+                    <td>{{ data.system_input_volume }}</td>
+                    <td>{{ data.build_consumer }}</td>
+                    <td>{{ data.non_revenue_water }}</td>
+                    <td>{{ data.arbitrary_loss }}</td>
+                    <td>{{ data.unauthorised_consumption }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

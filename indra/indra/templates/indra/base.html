@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Welcome to INDRA{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    {# Include the CSS file #}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, ul, li, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Set some base styles for the body */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+    }
+
+    /* Header styles */
+    header {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative; /* Add this line to position the image */
+    }
+
+    /* Add styles for the image */
+    header img {
+        max-width: 100px; /* Set the maximum width of the image */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Navigation styles */
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 14px;
+        font-size: 17px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    nav ul :hover {
+        color: skyblue;
+        text-decoration: none;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Main content styles */
+    main {
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #ccc;
+    }
+
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Links styles */
+    a {
+        color: #007bff;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+  </style>
+  <body>
+    <header>
+        <img src="{% static '../indra/static/images/Indra_black.png' %}" alt="Logo"> <!-- Replace 'images/logo.png' with the path to your logo image -->
+    </header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'console_login' %}">Console Login</a></li>
+        <li><a href="{% url 'technician_login' %}">Technician Login</a></li>
+      </ul>
+    </nav>
+    <main>{% block content %}
+      {% endblock%}
+    </main>
+    <footer>&copy; {{ year }} INDRA</footer>
+  </body>
+</html>

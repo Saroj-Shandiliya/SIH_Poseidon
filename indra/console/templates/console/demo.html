@@ -1,0 +1,22 @@
+<!-- console/templates/console/console_dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Console Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to the Dashboard</h1>
+    
+    <!-- Display the Non-Revenue Water plot -->
+    <h2>Total Non-Revenue Water per Month</h2>
+    <img src="data:image/png;base64,{{ non_revenue_water_plot }}" alt="Non-Revenue Water Plot">
+
+    <!-- Display the Pie Chart -->
+    <h2>Distribution of Water Loss Components</h2>
+    <img src="data:image/png;base64,{{ pie_chart }}" alt="Pie Chart">
+
+    <!-- Display the Line Chart -->
+    <h2>System Input Volume vs. Build Consumer</h2>
+    <img src="data:image/png;base64,{{ line_chart }}" alt="Line Chart">
+</body>
+</html>
